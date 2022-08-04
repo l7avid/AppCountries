@@ -1,9 +1,10 @@
 import { NgModule } from "@angular/core";
-import { Routes } from '@angular/router';
-import { ByCapitalComponent } from './app/country/pages/by-capital/by-capital.component';
-import { ByCountryComponent } from './app/country/pages/by-country/by-country.component';
-import { ByRegionComponent } from './app/country/pages/by-region/by-region.component';
-import { SingleCountryComponent } from './app/country/pages/single-country/single-country.component';
+import { RouterModule, Routes } from '@angular/router';
+
+import { ByCapitalComponent } from './country/pages/by-capital/by-capital.component';
+import { ByCountryComponent } from './country/pages/by-country/by-country.component';
+import { ByRegionComponent } from './country/pages/by-region/by-region.component';
+import { SingleCountryComponent } from './country/pages/single-country/single-country.component';
 
 const routes: Routes = [
     {
@@ -20,7 +21,7 @@ const routes: Routes = [
         component: ByCapitalComponent,
     },
     {
-        path: '/country/:countryId',
+        path: 'country/:countryId',
         component: SingleCountryComponent
     },
     {
@@ -31,10 +32,10 @@ const routes: Routes = [
 
 @NgModule({
     imports: [
-
+        RouterModule.forRoot(routes)
     ],
     exports: [
-
+        RouterModule
     ]
 })
 export class AppRoutingModule {}
