@@ -7,6 +7,8 @@ import { ByCountryComponent } from './pages/by-country/by-country.component';
 import { ByRegionComponent } from './pages/by-region/by-region.component';
 import { SingleCountryComponent } from './pages/single-country/single-country.component';
 import { RouterModule } from '@angular/router';
+import { CountryTableComponent } from './components/country-table/country-table.component';
+import { CountryInputComponent } from './components/country-input/country-input.component';
 
 
 
@@ -15,7 +17,9 @@ import { RouterModule } from '@angular/router';
     ByCapitalComponent,
     ByCountryComponent,
     ByRegionComponent,
-    SingleCountryComponent
+    SingleCountryComponent,
+    CountryTableComponent,
+    CountryInputComponent
   ],
   exports: [
     ByCapitalComponent,

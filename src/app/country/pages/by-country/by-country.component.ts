@@ -14,9 +14,9 @@ export class ByCountryComponent {
 
   constructor( private countryService: CountryService ) { }
 
-  search(){
+  search( element: string ){
     this.errorExist = false;
-    console.log(this.element);
+    this.element = element;
 
     this.countryService.searchCountry(this.element).subscribe((countries) => {
       console.log(countries);
