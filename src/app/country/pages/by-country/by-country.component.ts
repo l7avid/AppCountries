@@ -26,6 +26,10 @@ export class ByCountryComponent {
       this.errorExist = true;
       this.countries = [];
     })
+  }
+
+  suggestions(element: string){
+    this.errorExist = false;
     
   }
 
