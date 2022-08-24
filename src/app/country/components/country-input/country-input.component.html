@@ -4,6 +4,6 @@
            class="form-control"
            [(ngModel)]="element"
            (input) = "keyPressed()"
-           placeholder="Search Country..."
+           [placeholder]="placeholder"
     />
 </form>
